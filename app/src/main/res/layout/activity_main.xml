@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android中各种动画演示项目"/>
+
+            <Button
+                android:id="@+id/btnBuJian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tween补间动画（视图动画）"/>
+
+            <Button
+                android:id="@+id/btnFrameAnim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frame 动画（帧动画/Drawable 动画）"/>
+
+            <Button
+                android:id="@+id/btnAttrAnim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="属性动画"/>
+
+            <Button
+                android:id="@+id/btnRippleEffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="触摸反馈动画（Ripple Effect）"/>
+
+            <Button
+                android:id="@+id/btnReveal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="揭露动画（Reveal Effect）"/>
+
+            <Button
+                android:id="@+id/btnChangeScene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="转场动画&amp;共享元素（Activity 切换动画）"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

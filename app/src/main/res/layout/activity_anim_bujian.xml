@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间动画执行之后并未改变 View 的真实布局属性值\n（譬如位移后点击事件还在原来的位置）"
+            android:textColor="#0000FF" />
+
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/btnAnimAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AlphaAnimation(渐变透明)" />
+
+        <Button
+            android:id="@+id/btnAnimRotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RotateAnimation(旋转)" />
+
+        <Button
+            android:id="@+id/btnAnimScale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ScaleAnimation(缩放)" />
+
+        <Button
+            android:id="@+id/btnAnimTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TranslateAnimation(位移)" />
+
+        <Button
+            android:id="@+id/btnAnimSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AnimationSet(多种动画叠加)" />
+    </LinearLayout>
+</layout>

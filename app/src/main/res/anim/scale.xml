@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+效果：
+以view原本大小开始，横向放大到1.5,纵向缩小到0.5
+
+说明：
+Scale：缩放比例，1.0表示无变化
+pivotx: 缩放起点坐标（数值、百分数、百分数p，譬如
+50表示以当前View左上角坐标加50px为初始点、
+50%表示以当前View的左上角加上当前View宽高的50%做为初始点、
+50%p表示以当前View的左上角加上父控件宽高的50%做为初始点）
+-->
+
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="1"
+    android:fromYScale="1"
+    android:pivotX="0%"
+    android:pivotY="50%"
+    android:toXScale="1.5"
+    android:toYScale="0.5">
+
+</scale>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="特别注意，AnimationDrawable 的 start() 方法不能在 Activity 的 onCreate 方法中调运，因为 AnimationDrawable 还未完全附着到 window 上， 所以最好的调运时机是 onWindowFocusChanged() 方法中"
+            android:textColor="#00F" />
+
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+</layout>

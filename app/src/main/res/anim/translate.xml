@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ 效果：
+ 横向移动View宽度的位置
+
+ 说明：
+ 数值、百分数、百分数p，譬如
+ 50表示以当前View左上角坐标加50px为初始点、
+ 50%表示以当前View的左上角加上当前View宽高的50%做为初始点、
+ 50%p表示以当前View的左上角加上父控件宽高的50%做为初始点
+ -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="0" android:toXDelta="100%"
+    android:fromYDelta="0" android:toYDelta="0">
+
+</translate>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidAnim</string>
+    <string name="anim_ripple_effect">
+        系统自带的两个 Ripple 波纹效果
+        \n 1、波纹有边界 ?android:attr/selectableItemBackground
+        \n 2、波纹无边界 ?android:attr/selectableItemBackgroundBorderless
+        \n
+        \n使用时只需要把上面这两个值作为 View 的 android:background="" 或 android:foreground="" 即可（如果已经有背景， 可以设置到前景属性中）。同时如果想要效果显示出来要保证 View 是可点击的(比如控件本身可点击、或者给控件设置点击事件、 或给控件设置 android:clickable="true")。
+    </string>
+</resources>

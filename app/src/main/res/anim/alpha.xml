@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+效果：
+从不透明到透明度0.1
+
+说明：
+0.0到1.0，0.0是全透明，1.0是不透明
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:fromAlpha="1" android:toAlpha="0.1" />
+</set>

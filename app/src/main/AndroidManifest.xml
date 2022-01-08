@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.duxl.android.anim">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidAnim">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Android中各种动画演示">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BuJianAnimActivity"
+            android:label="Tween补间动画（视图动画）" />
+        <activity
+            android:name=".FrameAnimActivity"
+            android:label="Frame 动画（帧动画/Drawable 动画）" />
+        <activity
+            android:name=".AttrAnimActivity"
+            android:label="属性动画" />
+        <activity
+            android:name=".RippleEffectAnimActivity"
+            android:label="RippleEffect/TouchFeedback(触摸反馈动画)"
+            android:theme="@style/Theme.MaterialComponents.DayNight" />
+        <activity
+            android:name=".RevealAnimActivity"
+            android:label="揭露动画" />
+        <activity
+            android:name=".ChangeSceneAnimActivity"
+            android:label="转场共享元素动画" />
+        <activity
+            android:name=".ChangeSceneAnimSubActivity"
+            android:label="详情页面转场共享元素动画Sub" />
+    </application>
+
+</manifest>

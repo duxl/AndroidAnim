@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F00"
+                android:gravity="center"
+                android:text="点击下面的揭露按钮"
+                android:textColor="#FFF"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ivImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/test" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnShowLeftTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从左上角开始揭露" />
+
+        <Button
+            android:id="@+id/btnShowCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从中间开始揭露" />
+    </LinearLayout>
+</layout>

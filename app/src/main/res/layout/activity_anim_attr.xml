@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画实现原理就是修改控件的属性值实现的动画"
+            android:textColor="#00F" />
+
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/btnValueAnimator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ValueAnimator(根据动画回调设置view的属性)"/>
+
+        <Button
+            android:id="@+id/btnObjectAnimator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ObjectAnimator(创建动画直接指定属性)"/>
+
+    </LinearLayout>
+</layout>

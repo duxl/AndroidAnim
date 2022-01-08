@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+效果：以view中心旋转180度
+
+说明：
+Degrees：角度，正代表顺时针度数，负代表逆时针度数
+pivot：缩放坐标（数值、百分数、百分数p，譬如
+50表示以当前View左上角坐标加50px为初始点、
+50%表示以当前View的左上角加上当前View宽高的50%做为初始点、
+50%p表示以当前View的左上角加上父控件宽高的50%做为初始点）
+-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="180"></rotate>
