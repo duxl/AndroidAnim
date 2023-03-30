@@ -33,6 +33,7 @@ class ChangeSceneAnimActivity : AppCompatActivity(), View.OnClickListener {
 
         // ps: 不要关闭硬件加速，否则动画效果有影响。非要关闭硬件加速请设置到单个Activity上面
         // 参考 https://developer.android.com/guide/topics/graphics/hardware-accel?hl=zh-cn
+        // ps: 关于转场动画返回时无效，页面关闭不要调用finish(),请使用onBackPressed()
 
         showAdapter()
     }
