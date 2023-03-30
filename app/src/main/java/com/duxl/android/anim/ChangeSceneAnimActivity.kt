@@ -31,6 +31,9 @@ class ChangeSceneAnimActivity : AppCompatActivity(), View.OnClickListener {
          */
         //binding.ivImg.transitionName = "myImgAnim"
 
+        // ps: 不要关闭硬件加速，否则动画效果有影响。非要关闭硬件加速请设置到单个Activity上面
+        // 参考 https://developer.android.com/guide/topics/graphics/hardware-accel?hl=zh-cn
+
         showAdapter()
     }
 
