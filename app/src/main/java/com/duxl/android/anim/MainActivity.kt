@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding!!.btnRippleEffect.setOnClickListener(this)
         binding!!.btnReveal.setOnClickListener(this)
         binding!!.btnChangeScene.setOnClickListener(this)
+        binding!!.btnAnimatedSelector.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding!!.btnRippleEffect -> startActivity(Intent(this, RippleEffectAnimActivity::class.java))
             binding!!.btnReveal -> startActivity(Intent(this, RevealAnimActivity::class.java))
             binding!!.btnChangeScene -> startActivity(Intent(this, ChangeSceneAnimActivity::class.java))
+            binding!!.btnAnimatedSelector -> startActivity(Intent(this, AnimatedSelectorActivity::class.java))
         }
     }
 }

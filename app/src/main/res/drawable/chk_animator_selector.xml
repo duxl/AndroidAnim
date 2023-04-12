@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/state_on"
+        android:drawable="@drawable/ic_checkbox_on_24"
+        android:state_checked="true" />
+    <item
+        android:id="@+id/state_off"
+        android:drawable="@drawable/ic_checkbox_off_24"
+        android:state_checked="false" />
+
+    <transition
+        android:fromId="@id/state_on"
+        android:toId="@id/state_off">
+        <animation-list>
+            <item
+                android:drawable="@drawable/ic_3k_24"
+                android:duration="500" />
+            <item
+                android:drawable="@drawable/ic_2k_24"
+                android:duration="500" />
+            <item
+                android:drawable="@drawable/ic_1k_24"
+                android:duration="500" />
+            <item
+                android:drawable="@drawable/ic_checkbox_off_24"
+                android:duration="500" />
+
+        </animation-list>
+    </transition>
+
+    <transition
+        android:fromId="@id/state_off"
+        android:toId="@id/state_on">
+        <animation-list>
+            <item
+                android:drawable="@drawable/ic_1k_24"
+                android:duration="500" />
+            <item
+                android:drawable="@drawable/ic_2k_24"
+                android:duration="500" />
+            <item
+                android:drawable="@drawable/ic_3k_24"
+                android:duration="500" />
+            <item
+                android:drawable="@drawable/ic_checkbox_on_24"
+                android:duration="500" />
+
+        </animation-list>
+    </transition>
+
+</animated-selector>

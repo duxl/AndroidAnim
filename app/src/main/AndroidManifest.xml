@@ -41,6 +41,9 @@
         <activity
             android:name=".ChangeSceneAnimSubActivity"
             android:label="详情页面转场共享元素动画Sub" />
+        <activity
+            android:name=".AnimatedSelectorActivity"
+            android:label="状态改变的动画效果" />
     </application>
 
 </manifest>
