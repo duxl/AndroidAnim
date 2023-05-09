@@ -93,4 +93,9 @@ class ChangeSceneAnimActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding.unbind()
+    }
 }

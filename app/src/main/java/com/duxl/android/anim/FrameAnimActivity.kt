@@ -30,6 +30,7 @@ class FrameAnimActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         binding!!.ivImg.clearAnimation()
+        binding!!.unbind()
         super.onDestroy()
     }
 }

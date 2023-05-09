@@ -22,4 +22,9 @@ class RippleEffectAnimActivity : AppCompatActivity(), View.OnClickListener {
             binding!!.btnCustom -> showToast("自定义（有边界）")
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding.unbind()
+    }
 }

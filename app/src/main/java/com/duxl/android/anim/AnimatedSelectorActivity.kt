@@ -17,4 +17,9 @@ class AnimatedSelectorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_layout_animated_selector);
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding.unbind()
+    }
 }

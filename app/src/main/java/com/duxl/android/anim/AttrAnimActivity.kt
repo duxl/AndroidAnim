@@ -54,6 +54,7 @@ class AttrAnimActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onDestroy() {
         binding!!.ivImg.clearAnimation()
+        binding!!.unbind()
         super.onDestroy()
     }
 

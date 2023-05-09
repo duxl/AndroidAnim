@@ -22,4 +22,9 @@ class ChangeSceneAnimSubActivity : AppCompatActivity() {
         binding.tvText.text = intent.getStringExtra("txt")
 
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding.unbind()
+    }
 }

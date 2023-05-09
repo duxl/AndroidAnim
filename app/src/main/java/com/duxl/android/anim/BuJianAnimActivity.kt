@@ -79,6 +79,7 @@ class BuJianAnimActivity : AppCompatActivity(), View.OnClickListener {
     override fun onDestroy() {
         // 好的编程习惯是，页面销毁是取消动画
         binding!!.ivImg.clearAnimation()
+        binding!!.unbind()
         super.onDestroy()
 
     }

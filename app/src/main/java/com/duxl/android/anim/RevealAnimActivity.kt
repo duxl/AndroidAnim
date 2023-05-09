@@ -47,4 +47,9 @@ class RevealAnimActivity : AppCompatActivity(), View.OnClickListener {
         anim.duration = 800
         anim.start()
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding.unbind()
+    }
 }

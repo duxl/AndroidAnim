@@ -37,4 +37,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding!!.btnAnimatedSelector -> startActivity(Intent(this, AnimatedSelectorActivity::class.java))
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding?.unbind()
+    }
 }
