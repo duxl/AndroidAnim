@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android 提供了系统在您每次对布局做出更改后运行的预加载动画\n\n在 Activity 的布局 XML 文件中，针对您要启用动画的布局，将 android:animateLayoutChanges 属性设置为 true\n\n只需为布局添加、移除或更新项目，系统就会自动对这些项目进行动画处理"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCC"
+        android:text="关闭动画" />
+
+    <Button
+        android:id="@+id/btn_add_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add view" />
+
+    <Button
+        android:id="@+id/btn_remove_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="remove view" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

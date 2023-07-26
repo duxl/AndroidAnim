@@ -21,49 +21,61 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Android中各种动画演示项目"/>
+                android:text="Android中各种动画演示项目" />
 
             <Button
                 android:id="@+id/btnBuJian"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tween补间动画（视图动画）"/>
+                android:text="Tween补间动画（视图动画）" />
 
             <Button
                 android:id="@+id/btnFrameAnim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Frame 动画（帧动画/Drawable 动画）"/>
+                android:text="Frame 动画（帧动画/Drawable 动画）" />
 
             <Button
                 android:id="@+id/btnAttrAnim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="属性动画"/>
+                android:text="属性动画" />
 
             <Button
                 android:id="@+id/btnRippleEffect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="触摸反馈动画（Ripple Effect）"/>
+                android:text="触摸反馈动画（Ripple Effect）" />
 
             <Button
                 android:id="@+id/btnReveal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="揭露动画（Reveal Effect）"/>
+                android:text="揭露动画（Reveal Effect）" />
 
             <Button
                 android:id="@+id/btnChangeScene"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="转场动画&amp;共享元素（Activity 切换动画）"/>
+                android:text="转场动画&amp;共享元素（Activity 切换动画）" />
 
             <Button
                 android:id="@+id/btnAnimatedSelector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="animated-selector(状态改变的动画效果)"/>
+                android:text="animated-selector(状态改变的动画效果)" />
+
+            <Button
+                android:id="@+id/btnAnimatedLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LayoutTransition(系统默认)" />
+
+            <Button
+                android:id="@+id/btnAnimatedLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LayoutTransition(自定义)" />
 
         </LinearLayout>
 

@@ -44,6 +44,12 @@
         <activity
             android:name=".AnimatedSelectorActivity"
             android:label="状态改变的动画效果" />
+        <activity
+            android:name=".layout.LayoutTransitionAnim01Activity"
+            android:label="布局动画-系统默认" />
+        <activity
+            android:name=".layout.LayoutTransitionAnim02Activity"
+            android:label="布局动画-自定义" />
     </application>
 
 </manifest>

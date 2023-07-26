@@ -6,6 +6,8 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.duxl.android.anim.databinding.ActivityMainBinding
+import com.duxl.android.anim.layout.LayoutTransitionAnim01Activity
+import com.duxl.android.anim.layout.LayoutTransitionAnim02Activity
 
 /**
  * Android中各种动画演示，参考https://www.jianshu.com/p/0eb89d43eea4
@@ -24,6 +26,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding!!.btnReveal.setOnClickListener(this)
         binding!!.btnChangeScene.setOnClickListener(this)
         binding!!.btnAnimatedSelector.setOnClickListener(this)
+        binding!!.btnAnimatedLayout1.setOnClickListener(this)
+        binding!!.btnAnimatedLayout2.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -34,7 +38,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding!!.btnRippleEffect -> startActivity(Intent(this, RippleEffectAnimActivity::class.java))
             binding!!.btnReveal -> startActivity(Intent(this, RevealAnimActivity::class.java))
             binding!!.btnChangeScene -> startActivity(Intent(this, ChangeSceneAnimActivity::class.java))
-            binding!!.btnAnimatedSelector -> startActivity(Intent(this, AnimatedSelectorActivity::class.java))
+            binding!!.btnAnimatedLayout1 -> startActivity(Intent(this, LayoutTransitionAnim01Activity::class.java))
+            binding!!.btnAnimatedLayout2 -> startActivity(Intent(this, LayoutTransitionAnim02Activity::class.java))
         }
     }
 
