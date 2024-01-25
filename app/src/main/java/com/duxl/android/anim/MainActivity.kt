@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import com.duxl.android.anim.databinding.ActivityMainBinding
 import com.duxl.android.anim.layout.LayoutTransitionAnim01Activity
 import com.duxl.android.anim.layout.LayoutTransitionAnim02Activity
+import com.duxl.android.anim.layout.RecyclerAnimActivity
 
 /**
  * Android中各种动画演示，参考https://www.jianshu.com/p/0eb89d43eea4
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding!!.btnAnimatedSelector.setOnClickListener(this)
         binding!!.btnAnimatedLayout1.setOnClickListener(this)
         binding!!.btnAnimatedLayout2.setOnClickListener(this)
+        binding!!.btnAnimRecycler.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -40,6 +42,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding!!.btnChangeScene -> startActivity(Intent(this, ChangeSceneAnimActivity::class.java))
             binding!!.btnAnimatedLayout1 -> startActivity(Intent(this, LayoutTransitionAnim01Activity::class.java))
             binding!!.btnAnimatedLayout2 -> startActivity(Intent(this, LayoutTransitionAnim02Activity::class.java))
+            binding!!.btnAnimRecycler -> startActivity(Intent(this, RecyclerAnimActivity::class.java))
         }
     }
 

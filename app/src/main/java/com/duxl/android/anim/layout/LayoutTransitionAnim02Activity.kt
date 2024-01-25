@@ -15,7 +15,10 @@ import com.duxl.android.anim.databinding.ActivityLayoutTransitionAnim02Binding
 /**
  * 布局动画-自定义
  * https://www.likecs.com/show-203891267.html
- * LayoutTransition的核心概念是有两种类型的变化会引起四种动画，两种类型的变化分别是add和remove以及对应的VISIBLE以及GONE。以add为例，当add进一个View时，该View有appearing动画，而其他View因该View会发生change-appearing的动画；同理，remove时，被remove掉的View有disappearing动画，而其他View因该View会发生disappearing的动画。
+ * LayoutTransition的核心概念是有两种类型的变化会引起四种动画，
+ * 两种类型的变化分别是add和remove以及对应的VISIBLE以及GONE。
+ * 以add为例，当add进一个View时，该View有appearing动画，而其他View因该View会发生change-appearing的动画；
+ * 同理，remove时，被remove掉的View有disappearing动画，而其他View因该View会发生disappearing的动画。
  */
 class LayoutTransitionAnim02Activity : AppCompatActivity() {
 
@@ -23,8 +26,7 @@ class LayoutTransitionAnim02Activity : AppCompatActivity() {
         ActivityLayoutTransitionAnim02Binding.inflate(layoutInflater)
     }
 
-    var index = 0
-    val layoutTransition = LayoutTransition()
+    private val layoutTransition = LayoutTransition()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -96,7 +98,7 @@ class LayoutTransitionAnim02Activity : AppCompatActivity() {
                 text = "${mBinding.container.childCount}"
                 setPadding(0, 20, 0, 20)
                 layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
-            })
+            }, 0)
         }
 
         // 删除view

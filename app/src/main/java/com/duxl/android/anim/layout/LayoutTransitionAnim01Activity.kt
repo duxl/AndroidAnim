@@ -38,13 +38,13 @@ class LayoutTransitionAnim01Activity : AppCompatActivity() {
                 text = "${mBinding.container.childCount}"
                 setPadding(0, 20, 0, 20)
                 layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
-            })
+            }, 0)
         }
 
         // 删除view
         mBinding.btnRemoveView.setOnClickListener {
             if (mBinding.container.childCount > 0) {
-                mBinding.container.removeViewAt(mBinding.container.childCount - 1)
+                mBinding.container.removeViewAt(0)
             }
         }
     }

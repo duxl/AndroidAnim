@@ -77,6 +77,12 @@
                 android:layout_height="wrap_content"
                 android:text="LayoutTransition(自定义)" />
 
+            <Button
+                android:id="@+id/btnAnimRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LayoutAnim(Recycler)" />
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

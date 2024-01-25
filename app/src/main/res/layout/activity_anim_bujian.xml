@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="补间动画执行之后并未改变 View 的真实布局属性值\n（譬如位移后点击事件还在原来的位置）"
+            android:text="补间动画执行之后并未改变 View 的真实布局属性值\n（比如位移后点击事件还在原来的位置）"
             android:textColor="#0000FF" />
 
         <ImageView

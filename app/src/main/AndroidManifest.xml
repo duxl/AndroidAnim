@@ -50,6 +50,9 @@
         <activity
             android:name=".layout.LayoutTransitionAnim02Activity"
             android:label="布局动画-自定义" />
+        <activity
+            android:name=".layout.RecyclerAnimActivity"
+            android:label="布局动画-Recycler" />
     </application>
 
 </manifest>
