@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -28,13 +29,29 @@
             android:id="@+id/btnValueAnimator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ValueAnimator(根据动画回调设置view的属性)"/>
+            android:text="ValueAnimator(根据动画回调设置view的属性)" />
 
         <Button
             android:id="@+id/btnObjectAnimator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ObjectAnimator(创建动画直接指定属性)"/>
+            android:text="ObjectAnimator(创建动画直接指定属性)" />
+
+        <Button
+            android:id="@+id/btnPropertyValuesHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PropertyValuesHolder使用" />
+
+        <ImageView
+            android:id="@+id/ivImg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
     </LinearLayout>
 </layout>
