@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidAnim</string>
+    <string name="app_name">Anim示例</string>
     <string name="anim_ripple_effect">
         系统自带的两个 Ripple 波纹效果
         \n 1、波纹有边界 ?android:attr/selectableItemBackground
