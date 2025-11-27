@@ -35,6 +35,9 @@ class ChangeSceneAnimActivity : AppCompatActivity(), View.OnClickListener {
         // 参考 https://developer.android.com/guide/topics/graphics/hardware-accel?hl=zh-cn
         // ps: 关于转场动画返回时无效，页面关闭不要调用finish(),请使用onBackPressed()
 
+        // ps：如果其他设置都正常返回还是无动效，将finish()改为finishAfterTransition()
+        // 或则重写onBackPressed()方法里面调用finishAfterTransition()
+
         showAdapter()
     }
 
